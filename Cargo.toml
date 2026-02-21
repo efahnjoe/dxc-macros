@@ -1,0 +1,24 @@
+[package]
+name = "dxc-macros"
+description = "The Macros of Dxc Crate"
+keywords = ["dxc", "macros", "dxc-macros"]
+edition = "2024"
+rust-version = "1.89.0"
+version = "0.2.0"
+authors = ["efahnjoe"]
+license = "MIT"
+repository = "https://github.com/efahnjoe/dxc-macros"
+homepage = "https://github.com/efahnjoe/dxc-macros#README.md"
+readme = "README.md"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0.105", features = ["full", "parsing"] }
+quote = "1.0.40"
+proc-macro2 = "1.0.97"
+darling = "0.23.0"
+
+[dev-dependencies]
+dioxus = { version = "^0.7.3", features = ["fullstack"] }
