@@ -1,12 +1,11 @@
 use proc_macro::TokenStream;
 use quote::quote;
 use syn::{
-    braced, parenthesized,
+    Error, Field, Ident, Path, Result, Token, braced, parenthesized,
     parse::{Parse, ParseStream},
     parse_macro_input,
     punctuated::Punctuated,
     token::Comma,
-    Error, Field, Ident, Result, Token,Path
 };
 
 pub struct PropsMacroInput {
