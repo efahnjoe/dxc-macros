@@ -5,6 +5,7 @@
       "release-type": "rust",
       "release-as": "0.2.0",
       "include-v-in-tag": true,
+      "include-v-in-release-name": true,
       "include-component-in-tag": false
     }
   }
